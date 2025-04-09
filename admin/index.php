@@ -1,6 +1,12 @@
 <?php include 'auth.php'; ?>
 <?php
-$db = new PDO('sqlite:../ppdb2025.db');
+try {
+    $db = new PDO('sqlite:../ppdb2025.db');
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (PDOException $e) {
+        echo 'Koneksi gagal: ' . $e->getMessage();
+        exit;
+    }
 
 $keyword = isset($_GET['search']) ? $_GET['search'] : '';
 $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
