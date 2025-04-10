@@ -1121,7 +1121,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['kirim'])) {
                                 <div class="modal-body">
                                     <!-- Detail Data -->
                                     <h3 class="text-uppercase">Data Berhasil Disimpan</h3>
-                                    <p class="item-intro text-muted">Berikut adalah detail data yang telah Anda input:</p>
+                                    <p class="item-intro text-muted" style="text-align:left">Ini adalah data formulir sementara, <br>
+                                    selanjutnya peserta wajib daftar kembali pada website <b><a href="https://dev-portal.ppdb.jabarprov.go.id/" target="_blank">ppdb.jabarprov.go.id</a></b>,<br>
+                                    yang memang saat ini belum dibuka. Data formulir sementara ini bermanfaat bagi peserta, 
+                                    dimana admin akan lebih mudah memberikan informasi dan membantu proses pendaftaran selanjutnya (ppdb.jabarprov.go.id). </p>
                                     <table class="table table-bordered">
                                         <tr>
                                             <th>NISN</th>
