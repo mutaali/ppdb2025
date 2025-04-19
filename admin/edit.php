@@ -1,12 +1,6 @@
 <?php include 'auth.php'; ?>
 <?php
-try {
-$db = new PDO('sqlite:../ppdb2025.db');
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    echo 'Koneksi gagal: ' . $e->getMessage();
-    exit;
-}
+require "db.php";
 $id = $_GET['id'];
 $data = $db->query("SELECT * FROM pendaftaran WHERE id = $id")->fetch();
 

@@ -1,12 +1,6 @@
 <?php include 'auth.php'; ?>
 <?php
-try {
-    $db = new PDO('sqlite:../ppdb2025.db');
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch (PDOException $e) {
-        echo 'Koneksi gagal: ' . $e->getMessage();
-        exit;
-    }
+require "db.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $db->prepare("INSERT INTO pendaftaran (nisn, nama, jk, kontak1, kontak2, asal_sekolah, jurusan1, jurusan2, alamat)

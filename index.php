@@ -1,5 +1,6 @@
 <?php 
 ob_start(); // Aktifkan output buffering
+date_default_timezone_set('Asia/Jakarta');
 /**
 * Note: This file may contain artifacts of previous malicious infection.
 * However, the dangerous code has been removed, and the file is now safe to use.
@@ -12,7 +13,7 @@ ob_start(); // Aktifkan output buffering
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>PPDB SMKN BANTARKALONG</title>
+        <title>SPMB SMKN BANTARKALONG</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <!-- <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script> -->
@@ -49,10 +50,12 @@ ob_start(); // Aktifkan output buffering
             <div class="container">
                 <div class="masthead-subheading">
                     <div class="masthead-heading text-uppercase" style="font-family: 'Segoe UI'; font-style: normal">
-                        PPDB</div>
+                        SPMB
+                    </div>
                     <div class="masthead-subheading" style="font-family: Tahoma; font-style: normal">
-                        SMKN BANTARKALONG<br>
-                        Tahun Ajaran 2025/2026
+                        (Sistem Penerimaan Murid Baru)<br>
+                        <!-- SMKN BANTARKALONG<br> -->
+                        <!-- Tahun Ajaran 2025/2026 -->
                     </div>
                     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" 
                     href="#contact" style="margin: 5px; color: black;">ISI FORMULIR SEMENTARA</a>
@@ -543,7 +546,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['kirim'])) {
         <section class="py-4" id="kuota">
             <div class="container">
                     <div class="text-center">
-                        <h4 class="section-heading text-uppercase">Kuota PPDB <br>SMKN Bantarkalong <br>
+                        <h4 class="section-heading text-uppercase">Kuota SPMB <br>SMKN Bantarkalong <br>
                         TAHUN AJARAN 2025/2026</h4>
                         <table class="table">
                             <tr>
@@ -570,7 +573,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['kirim'])) {
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td><b>TO (TRK & TSM)</b></td>
+                                <td><b>TO (TKR & TSM)</b></td>
                                 <!-- <td>4</td> -->
                                 <td>216</td>
                             </tr>
@@ -1122,7 +1125,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['kirim'])) {
                                     <!-- Detail Data -->
                                     <h3 class="text-uppercase">Data Berhasil Disimpan</h3>
                                     <p class="item-intro text-muted" style="text-align:left">Ini adalah data formulir sementara, <br>
-                                    selanjutnya peserta wajib daftar kembali pada website <b><a href="https://dev-portal.ppdb.jabarprov.go.id/" target="_blank">ppdb.jabarprov.go.id</a></b>,<br>
+                                    selanjutnya peserta wajib daftar kembali pada website <b><a href="https://spmb.jabarprov.go.id/" target="_blank">spmb.jabarprov.go.id</a></b>,<br>
                                     yang memang saat ini belum dibuka. Data formulir sementara ini bermanfaat bagi peserta, 
                                     dimana admin akan lebih mudah memberikan informasi dan membantu proses pendaftaran selanjutnya (ppdb.jabarprov.go.id). </p>
                                     <table class="table table-bordered">
